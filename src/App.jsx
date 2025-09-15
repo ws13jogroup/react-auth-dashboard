@@ -6,6 +6,7 @@ import ForgotPassword from '@/pages/ForgotPassword.jsx'
 import ResetPassword from '@/pages/ResetPassword.jsx'
 import Dashboard from '@/pages/Dashboard.jsx'
 import NotFound from '@/pages/NotFound.jsx'
+import ChatbotWidget from '@/components/ChatbotWidget'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/home" element={<Navigate to="/" replace />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+       <ChatbotWidget />
     </>
   )
 }
